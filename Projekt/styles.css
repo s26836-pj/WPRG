@@ -1,0 +1,338 @@
+/* styles.css */
+
+body {
+    background-color: #1d1f21;
+    color: #c7c7c7;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #2d2f31;
+    padding: 10px 0;
+}
+
+nav ul.main-nav {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul.main-nav li {
+    margin: 0 15px;
+    position: relative;
+}
+
+nav ul.main-nav li a {
+    color: #c7c7c7;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+nav ul.main-nav li a:hover,
+nav ul.main-nav li a:focus {
+    color: #fff;
+    background-color: #9b59b6;
+    border-radius: 5px;
+}
+
+nav ul.main-nav li.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+nav ul.main-nav .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #2d2f31;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+nav ul.main-nav .dropdown-content li {
+    margin: 0;
+}
+
+nav ul.main-nav .dropdown-content li a {
+    padding: 10px 15px;
+}
+
+nav ul.main-nav .dropdown-content li a:hover {
+    background-color: #9b59b6;
+    color: #fff;
+}
+
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+}
+
+form {
+    background-color: #2d2f31;
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+form input, form button, form input[type="submit"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 3px;
+}
+
+form input {
+    background-color: #1d1f21;
+    color: #c7c7c7;
+}
+
+form input:focus {
+    background-color: #3a3d3f;
+}
+
+form button, form input[type="submit"] {
+    background-color: #9b59b6;
+    color: #fff;
+    cursor: pointer;
+}
+
+form button:hover, form input[type="submit"]:hover {
+    background-color: #8e44ad;
+}
+
+.forgot-password {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.forgot-password a {
+    color: #9b59b6;
+    text-decoration: none;
+}
+
+.forgot-password a:hover {
+    color: #8e44ad;
+}
+
+.add-thread {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #9b59b6;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.add-thread:hover {
+    background-color: #8e44ad;
+}
+
+.category, .topic {
+    background-color: #2d2f31;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.category-header, .topic-header {
+    display: flex;
+    align-items: center;
+}
+
+.category-title h2, .topic-title h3 {
+    margin: 0;
+    color: #9b59b6;
+}
+
+.category-title p, .topic-title p {
+    margin: 0;
+    color: #c7c7c7;
+}
+
+.topic h3 a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.topic h3 a:hover {
+    color: #2980b9;
+}
+
+/* Latest topics */
+.latest-topic {
+    background-color: #2d2f31;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.latest-topic h2 {
+    margin: 0;
+    color: #9b59b6;
+}
+
+.latest-topic p {
+    margin: 0;
+    color: #c7c7c7;
+}
+
+.latest-topic a {
+    color: #3498db; 
+}
+
+.latest-topic a:hover {
+    color: #2980b9; 
+}
+.edit-thread, .delete-thread {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 3px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.edit-thread {
+    background-color: #3498db;
+}
+
+.edit-thread:hover {
+    background-color: #2980b9;
+}
+
+.delete-thread {
+    background-color: #e74c3c;
+}
+
+.delete-thread:hover {
+    background-color: #c0392b;
+}
+form textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 3px;
+    background-color: #1d1f21;
+    color: #c7c7c7;
+}
+
+form textarea:focus {
+    background-color: #3a3d3f;
+}
+
+form input, form textarea, form button, form input[type="submit"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 3px;
+}
+
+form input, form textarea {
+    background-color: #1d1f21;
+    color: #c7c7c7;
+}
+
+form input:focus, form textarea:focus {
+    background-color: #3a3d3f;
+}
+
+form button, form input[type="submit"] {
+    background-color: #9b59b6;
+    color: #fff;
+    cursor: pointer;
+}
+
+form button:hover, form input[type="submit"]:hover {
+    background-color: #8e44ad;
+}
+
+.profile-picture-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.profile-picture-section label {
+    margin-bottom: 10px;
+}
+
+.profile-picture-section input[type="file"] {
+    margin-top: 10px;
+}
+
+.profile-picture {
+    max-width: 100px;
+    max-height: 100px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+.message {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+.delete-category-form {
+    margin-top: 20px;
+}
+
+.delete-category-btn {
+    background-color: #ff4d4d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.delete-category-btn:hover {
+    background-color: #ff1a1a;
+}
+.add-category {
+    margin-top: 30px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+.add-category h2 {
+    margin-bottom: 20px;
+}
+
+.add-category label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.add-category input[type="text"],
+.add-category textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.add-category input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.add-category input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
